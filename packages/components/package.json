@@ -8,5 +8,14 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@vitest/coverage-v8": "^1.4.0",
+    "@vue/test-utils": "^2.4.5",
+    "jsdom": "^24.0.0"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.11.8",
+    "async-validator": "^4.2.5"
+  }
 }
