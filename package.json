@@ -8,7 +8,7 @@
     "docs:dev": "pnpm --filter @kawa-ui/docs dev",
     "docs:build": "pnpm --filter @kawa-ui/docs build",
     "docs:preview": "pnpm --filter @kawa-ui/docs preview",
-    "test": "echo 'todo'"
+    "test": "pnpm --filter @kawa-ui/components test"
   },
   "keywords": [],
   "author": "",

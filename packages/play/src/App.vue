@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <kawa-button />
+  <kawa-button type="primary" size="small">test</kawa-button>
 </template>
 
 <style scoped>
