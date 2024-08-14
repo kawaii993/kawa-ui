@@ -3,3 +3,4 @@ import { withInstall } from '@kawa-ui/utils'
 
 export const kawaButton = withInstall(Button)
 
+export * from './types'
