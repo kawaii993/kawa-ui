@@ -1,1 +1,82 @@
 @import './reset.css';
+
+:root {
+    /* colors */
+    --kawa-color-white: #ffffff;
+    --kawa-color-black: #000000;
+    --colors: (primary: #409eff, success: #67c23a, warning: #e6a23c, danger: #f56c6c, info: #909399);
+    --kawa-bg-color: #ffffff;
+    --kawa-bg-color-page: #f2f3f5;
+    --kawa-bg-color-overlay: #ffffff;
+    --kawa-text-color-primary: #303133;
+    --kawa-text-color-regular: #606266;
+    --kawa-text-color-secondary: #909399;
+    --kawa-text-color-placeholder: #a8abb2;
+    --kawa-text-color-disabled: #c0c4cc;
+    --kawa-border-color: #dcdfe6;
+    --kawa-border-color-light: #e4e7ed;
+    --kawa-border-color-lighter: #ebeef5;
+    --kawa-border-color-extra-light: #f2f6fc;
+    --kawa-border-color-dark: #d4d7de;
+    --kawa-border-color-darker: #cdd0d6;
+    --kawa-fill-color: #f0f2f5;
+    --kawa-fill-color-light: #f5f7fa;
+    --kawa-fill-color-lighter: #fafafa;
+    --kawa-fill-color-extra-light: #fafcff;
+    --kawa-fill-color-dark: #ebedf0;
+    --kawa-fill-color-darker: #e6e8eb;
+    --kawa-fill-color-blank: #ffffff;
+
+    @each $val, $color in var(--colors) {
+        --kawa-color-$(val): $(
+            color
+        );
+
+    @for $i from 3 to 9 {
+        --kawa-color-$(val)-light-$(i): mix(#fff, $(
+                color),
+            0.$(
+            i)
+        );
+}
+
+--kawa-color-$(val)-dark-2: mix(#000, $(color), 0.2);
+}
+
+/* border */
+--kawa-border-width: 1px;
+--kawa-border-style: solid;
+--kawa-border-color-hover: var(--kawa-text-color-disabled);
+--kawa-border: var(--kawa-border-width) var(--kawa-border-style) var(--kawa-border-color);
+--kawa-border-radius-base: 4px;
+--kawa-border-radius-small: 2px;
+--kawa-border-radius-round: 20px;
+--kawa-border-radius-circle: 100%;
+
+/*font*/
+--kawa-font-size-extra-large: 20px;
+--kawa-font-size-large: 18px;
+--kawa-font-size-medium: 16px;
+--kawa-font-size-base: 14px;
+--kawa-font-size-small: 13px;
+--kawa-font-size-extra-small: 12px;
+--kawa-font-family: 'Helvetica Neue',
+Helvetica,
+'PingFang SC',
+'Hiragino Sans GB',
+'Microsoft YaHei',
+'\5fae\8f6f\96c5\9ed1',
+Arial,
+sans-serif;
+--kawa-font-weight-primary: 500;
+
+/*disabled*/
+--kawa-disabled-bg-color: var(--kawa-fill-color-light);
+--kawa-disabled-text-color: var(--kawa-text-color-placeholder);
+--kawa-disabled-border-color: var(--kawa-border-color-light);
+
+/*animation*/
+--kawa-transition-duration: 0.4s;
+--kawa-transition-duration-fast: 0.2s;
+}
+

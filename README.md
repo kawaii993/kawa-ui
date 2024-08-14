@@ -5,3 +5,19 @@
 For my studying  :D
 
 [kawa-ui 项目文档地址](https://kawaii993.github.io/kawa-ui/)
+
+## 特点
+- 🌟 完全基于 Vue3 和 TypeScript，享受最新的前端技术红利
+- 🚀 极速开发体验，Vite 作为开发服务器，提供闪电般的热更新
+- 🎨 丰富的组件库，覆盖各种常见 UI 场景
+
+## 安装
+
+```bash
+npm install kawa-ui 
+// 暂定占位
+```
+## 快速开始
+
+暂定
+

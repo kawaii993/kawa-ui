@@ -1,0 +1,257 @@
+.kawa-button-group {
+    --kawa-button-group-border-color: var(--kawa-border-color-lighter);
+}
+
+.kawa-button {
+    --kawa-button-font-weight: var(--kawa-font-weight-primary);
+    --kawa-button-border-color: var(--kawa-border-color);
+    --kawa-button-bg-color: var(--kawa-fill-color-blank);
+    --kawa-button-text-color: var(--kawa-text-color-regular);
+    --kawa-button-disabled-text-color: var(--kawa-disabled-text-color);
+    --kawa-button-disabled-bg-color: var(--kawa-fill-color-blank);
+    --kawa-button-disabled-border-color: var(--kawa-border-color-light);
+    --kawa-button-hover-text-color: var(--kawa-color-primary);
+    --kawa-button-hover-bg-color: var(--kawa-color-primary-light-9);
+    --kawa-button-hover-border-color: var(--kawa-color-primary-light-7);
+    --kawa-button-active-text-color: var(--kawa-button-hover-text-color);
+    --kawa-button-active-border-color: var(--kawa-color-primary);
+    --kawa-button-active-bg-color: var(--kawa-button-hover-bg-color);
+    --kawa-button-outline-color: var(--kawa-color-primary-light-5);
+    --kawa-button-active-color: var(--kawa-text-color-primary);
+}
+
+.kawa-button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1;
+    height: 32px;
+    white-space: nowrap;
+    cursor: pointer;
+    color: var(--kawa-button-text-color);
+    text-align: center;
+    box-sizing: border-box;
+    outline: none;
+    transition: 0.1s;
+    font-weight: var(--kawa-button-font-weight);
+    user-select: none;
+    vertical-align: middle;
+    -webkit-appearance: none;
+    background-color: var(--kawa-button-bg-color);
+    border: var(--kawa-border);
+    border-color: var(--kawa-button-border-color);
+    padding: 8px 15px;
+    font-size: var(--kawa-font-size-base);
+    border-radius: var(--kawa-border-radius-base);
+
+    &+& {
+        margin-left: 12px;
+    }
+
+    &:hover,
+    &:focus {
+        color: var(--kawa-button-hover-text-color);
+        border-color: var(--kawa-button-hover-border-color);
+        background-color: var(--kawa-button-hover-bg-color);
+        outline: none;
+    }
+
+    &:active {
+        color: var(--kawa-button-active-text-color);
+        border-color: var(--kawa-button-active-border-color);
+        background-color: var(--kawa-button-active-bg-color);
+        outline: none;
+    }
+
+    /*plain*/
+    &.is-plain {
+        --kawa-button-hover-text-color: var(--kawa-color-primary);
+        --kawa-button-hover-bg-color: var(--kawa-fill-color-blank);
+        --kawa-button-hover-border-color: var(--kawa-color-primary);
+    }
+
+    /*round*/
+    &.is-round {
+        border-radius: var(--kawa-border-radius-round);
+    }
+
+    /*circle*/
+    &.is-circle {
+        border-radius: 50%;
+        padding: 8px;
+    }
+
+    /*disabled*/
+    &.is-loading,
+    &.is-disabled,
+    &.is-disabled:hover,
+    &.is-disabled:focus,
+    &[disabled],
+    &[disabled]:hover,
+    &[disabled]:focus {
+        color: var(--kawa-button-disabled-text-color);
+        cursor: not-allowed;
+        background-image: none;
+        background-color: var(--kawa-button-disabled-bg-color);
+        border-color: var(--kawa-button-disabled-border-color);
+    }
+
+    [class*='er-icon'] {
+        width: 1em;
+        height: 1em;
+    }
+}
+
+@each $val in primary, success, warning, info, danger {
+    .kawa-button--$(val) {
+        --kawa-button-text-color: var(--kawa-color-white);
+        --kawa-button-bg-color: var(--kawa-color-$(
+                val)
+        );
+    --kawa-button-border-color: var(--kawa-color-$(
+            val)
+    );
+--kawa-button-outline-color: var(--kawa-color-$(
+        val)-light-5
+);
+--kawa-button-active-color: var(--kawa-color-$(
+        val)-dark-2
+);
+--kawa-button-hover-text-color: var(--kawa-color-white);
+--kawa-button-hover-bg-color: var(--kawa-color-$(
+        val)-light-3
+);
+--kawa-button-hover-border-color: var(--kawa-color-$(
+        val)-light-3
+);
+--kawa-button-active-bg-color: var(--kawa-color-$(
+        val)-dark-2
+);
+--kawa-button-active-border-color: var(--kawa-color-$(
+        val)-dark-2
+);
+--kawa-button-disabled-text-color: var(--kawa-color-white);
+--kawa-button-disabled-bg-color: var(--kawa-color-$(
+        val)-light-5
+);
+--kawa-button-disabled-border-color: var(--kawa-color-$(
+        val)-light-5
+);
+}
+
+.kawa-button--$(val).is-plain {
+    --kawa-button-text-color: var(--kawa-color-$(
+            val)
+    );
+--kawa-button-bg-color: var(--kawa-color-$(
+        val)-light-9
+);
+--kawa-button-border-color: var(--kawa-color-$(
+        val)-light-5
+);
+--kawa-button-hover-text-color: var(--kawa-color-white);
+--kawa-button-hover-bg-color: var(--kawa-color-$(
+        val)
+);
+--kawa-button-hover-border-color: var(--kawa-color-$(
+        val)
+);
+--kawa-button-active-text-color: var(--kawa-color-white);
+
+--kawa-button-disabled-text-color: var(--kawa-color-$(
+        val)-light-5
+);
+--kawa-button-disabled-bg-color: var(--kawa-color-$(
+        val)-light-9
+);
+--kawa-button-disabled-border-color: var(--kawa-color-$(
+        val)-light-8
+);
+}
+}
+
+.kawa-button--large {
+    --kawa-button-size: 40px;
+    height: var(--kawa-button-size);
+    padding: 12px 19px;
+    font-size: var(--kawa-font-size-base);
+    border-radius: var(--kawa-border-radius-base);
+
+    /*circle*/
+    &.is-circle {
+        border-radius: 50%;
+        padding: 12px;
+    }
+}
+
+.kawa-button--small {
+    --kawa-button-size: 24px;
+    height: var(--kawa-button-size);
+    padding: 5px 11px;
+    font-size: 12px;
+    border-radius: calc(var(--kawa-border-radius-base) - 1px);
+
+    /*circle*/
+    &.is-circle {
+        border-radius: 50%;
+        padding: 5px;
+    }
+
+    [class*='er-icon'] {
+        width: 12px;
+        height: 12px;
+    }
+}
+
+.kawa-button-group {
+    display: inline-block;
+    vertical-align: middle;
+
+    &::after {
+        clear: both;
+    }
+
+    &> :deep(.kawa-button) {
+        float: left;
+        position: relative;
+        margin-left: 0;
+
+        &:first-child {
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+            border-right-color: var(--kawa-button-group-border-color);
+        }
+
+        &:last-child {
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+            border-left-color: var(--kawa-button-group-border-color);
+        }
+
+        &:not(:first-child):not(:last-child) {
+            border-radius: 0;
+
+            border-left-color: var(--kawa-button-group-border-color);
+            border-right-color: var(--kawa-button-group-border-color);
+        }
+
+        &:not(:last-child) {
+            margin-right: -1px;
+        }
+
+        &:first-child:last-child {
+            border-top-right-radius: var(--kawa-border-radius-base);
+            border-bottom-right-radius: var(--kawa-border-radius-base);
+            border-top-left-radius: var(--kawa-border-radius-base);
+            border-bottom-left-radius: var(--kawa-border-radius-base);
+
+            &.is-round {
+                border-radius: var(--kawa-border-radius-round);
+            }
+
+            &.is-circle {
+                border-radius: 50%;
+            }
+        }
+    }
+}
