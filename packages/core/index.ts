@@ -7,5 +7,5 @@ import '@kawa-ui/theme/index.css'
 library.add(fas)
 const installer = makeInstaller(components)
 
-export * from '@kawa-ui/components'
+export * from '../components'
 export default installer;

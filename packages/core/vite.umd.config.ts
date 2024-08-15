@@ -8,7 +8,7 @@ export default defineConfig({
         outDir: 'dist/umd',
         lib: {
             entry: resolve(__dirname, "./index.ts"),
-            name: "kawaUI",
+            name: "kawa-ui",
             fileName: "index",
             formats: ["umd"]
         },

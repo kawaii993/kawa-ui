@@ -14,8 +14,7 @@ For my studying  :D
 ## 安装
 
 ```bash
-npm install kawa-ui 
-// 暂定占位
+npm install ui-kawa 
 ```
 ## 快速开始
 
