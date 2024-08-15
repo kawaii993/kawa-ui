@@ -25,23 +25,6 @@ const customStyles = computed(() => ({ color: props.color ?? void 0 }));
     </i>
 </template>
 
-<style scoped>
-.kawa-icon {
-    --kawa-icon-color: inherit;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    fill: currentColor;
-    color: var(--kawa-icon-color);
-    font-size: inherit;
-}
-
-@each $val in primary, info, success, warning, danger {
-    .kawa-icon--$(val) {
-        --kawa-icon-color: var(--kawa-color-$(
-                val)
-        );
-}
-}
+<style>
+@import './style.css';
 </style>
