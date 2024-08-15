@@ -1,4 +1,4 @@
-import { kawaButton, kawaIcon } from '@kawa-ui/components'
+import { kawaButton, kawaIcon, kawaButtonGroup } from '@kawa-ui/components'
 import type { Plugin } from 'vue'
 
-export default [kawaButton, kawaIcon] as Plugin[]
+export default [kawaButton, kawaIcon, kawaButtonGroup] as Plugin[]

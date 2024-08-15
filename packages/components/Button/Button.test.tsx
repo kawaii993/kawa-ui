@@ -1,7 +1,12 @@
-import { describe, it, expect, vi } from "vitest"
+import { describe, it, test, expect, vi } from "vitest"
 import { mount } from "@vue/test-utils"
 
 import Button from "./Button.vue"
+import ButtonGroup from "./ButtonGroup.vue"
+import Icon from "../Icon/Icon.vue"
+
+
+
 
 describe("Button.vue", () => {
     // Props: type
@@ -67,5 +72,77 @@ describe("Button.vue", () => {
         const wrapper = mount(Button, {});
         await wrapper.trigger("click");
         expect(wrapper.emitted().click).toHaveLength(1);
+    });
+
+    // it("should display loading icon and not emit click event when button is loading", async () => {
+    //     const wrapper = mount(Button, {
+    //         props: { loading: true },
+    //         global: {
+    //             stubs: ["kawaIcon"],
+    //         },
+    //     });
+    //     const iconElement = wrapper.findComponent(Icon);
+
+    //     expect(wrapper.find(".loading-icon").exists()).toBe(true);
+    //     expect(iconElement.exists()).toBeTruthy();
+    //     expect(iconElement.attributes("icon")).toBe("spinner");
+    //     await wrapper.trigger("click");
+    //     expect(wrapper.emitted("click")).toBeUndefined();
+    // });
+
+});
+
+describe("ButtonGroup.vue", () => {
+    test("basic button group", async () => {
+        const wrapper = mount(() => (
+            <ButtonGroup>
+                <Button>button 1</Button>
+                <Button>button 2</Button>
+            </ButtonGroup>
+        ));
+
+        expect(wrapper.classes()).toContain("kawa-button-group");
+    });
+
+    test("button group size", () => {
+        const sizes = ["large", "default", "small"];
+        sizes.forEach((size) => {
+            const wrapper = mount(() => (
+                <ButtonGroup size={size as any}>
+                    <Button>button 1</Button>
+                    <Button>button 2</Button>
+                </ButtonGroup>
+            ));
+
+            const buttonWrapper = wrapper.findComponent(Button);
+            expect(buttonWrapper.classes()).toContain(`kawa-button--${size}`);
+        });
+    });
+
+    test("button group type", () => {
+        const types = ["primary", "success", "warning", "danger", "info"];
+        types.forEach((type) => {
+            const wrapper = mount(() => (
+                <ButtonGroup type={type as any}>
+                    <Button>button 1</Button>
+                    <Button>button 2</Button>
+                </ButtonGroup>
+            ));
+
+            const buttonWrapper = wrapper.findComponent(Button);
+            expect(buttonWrapper.classes()).toContain(`kawa-button--${type}`);
+        });
+    });
+
+    test("button group disabled", () => {
+        const wrapper = mount(() => (
+            <ButtonGroup disabled>
+                <Button>button 1</Button>
+                <Button>button 2</Button>
+            </ButtonGroup>
+        ));
+
+        const buttonWrapper = wrapper.findComponent(Button);
+        expect(buttonWrapper.classes()).toContain(`is-disabled`);
     });
 });
