@@ -1,7 +1,7 @@
 import DefaultTheme from "vitepress/theme";
 import { type App } from "vue";
 import kawaUI from "kawa-ui";
-import { ElementPlusContainer } from "@vitepress-preview/component";
+import { ElementPlusContainer } from "../../../../libs/vitepress-preview-component";
 
 import "@vitepress-preview/component/style.css";
 import "kawa-ui/dist/index.css";
