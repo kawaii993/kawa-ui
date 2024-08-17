@@ -32,7 +32,8 @@ const iconStyle = computed(() => ({
 const handleBtnClick = (e: MouseEvent) => {
     emits("click", e);
 };
-const handleBtnClickThrottle = throttle(handleBtnClick, props.throttleDuration);
+const handleBtnClickThrottle = throttle(handleBtnClick, props.throttleDuration
+);
 
 
 defineExpose<ButtonInstance>({
