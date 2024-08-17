@@ -1,5 +1,5 @@
 {
-  "name": "kawa-ui",
+  "name": "ui-kawa",
   "version": "1.0.1",
   "description": "Components library by Vue3 + TS",
   "type": "module",
