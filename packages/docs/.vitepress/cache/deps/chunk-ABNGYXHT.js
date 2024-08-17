@@ -35,7 +35,7 @@ import {
   watchEffect
 } from "./chunk-JSAMQLXU.js";
 
-// ../../node_modules/.pnpm/vue-demi@0.14.10_vue@3.4.37/node_modules/vue-demi/lib/index.mjs
+// ../../node_modules/.pnpm/vitepress@1.1.4_@algolia+client-search@4.24.0_@types+node@20.14.15_async-validator@4.2.5_post_mxpxuo4zm3qiamzwdnhvqyzd3q/node_modules/vitepress/lib/vue-demi.mjs
 var isVue2 = false;
 var isVue3 = true;
 function set(target, key, val) {
@@ -9160,4 +9160,13 @@ export {
   useWindowScroll,
   useWindowSize
 };
-//# sourceMappingURL=chunk-2Z4VTJ2F.js.map
+/*! Bundled license information:
+
+vitepress/lib/vue-demi.mjs:
+  (**
+   * vue-demi v0.14.7
+   * Copyright (c) 2020-present, Anthony Fu
+   * @license MIT
+   *)
+*/
+//# sourceMappingURL=chunk-ABNGYXHT.js.map

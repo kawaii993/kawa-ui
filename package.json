@@ -44,6 +44,8 @@
     "@kawa-ui/hooks": "workspace:*",
     "@kawa-ui/theme": "workspace:*",
     "@kawa-ui/utils": "workspace:*",
+    "@vitepress-demo-preview/component": "^2.3.2",
+    "@vitepress-demo-preview/plugin": "^1.2.3",
     "kawa-ui": "workspace:*",
     "lodash-es": "^4.17.21",
     "vue": "^3.4.19"
