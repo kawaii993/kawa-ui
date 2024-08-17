@@ -3,7 +3,7 @@ import { type App } from "vue";
 import kawaUI from "kawa-ui";
 import { ElementPlusContainer } from "../../../../libs/vitepress-preview-component";
 
-import "@vitepress-preview/component/style.css";
+import "@vitepress-preview-component/style.css";
 import "kawa-ui/dist/index.css";
 
 export default {
