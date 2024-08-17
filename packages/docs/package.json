@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "type": "module",
-  "main": "index.md",
+  "main": "index.js",
   "scripts": {
     "dev": "vitepress dev ",
     "build": "vitepress build ",
