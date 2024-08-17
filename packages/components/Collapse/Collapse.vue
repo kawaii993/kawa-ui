@@ -59,6 +59,7 @@ provide(COLLAPSE_CTX_KEY, {
   activeNames,
   handleItemClick,
 });
+
 </script>
 
 <template>

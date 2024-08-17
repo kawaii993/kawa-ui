@@ -1,16 +1,16 @@
 <script setup lang="ts">
-// import { type CollapseItemName } from "kawa-ui";
+import { type CollapseItemName } from "kawa-ui";
 import { ref } from "vue";
 
 const activeNames = ref(["1"]);
 
-// function handleChange(val: CollapseItemName[]) {
-//   console.log(val);
-// }
+function handleChange(val: CollapseItemName[]) {
+  console.log(val);
+}
 </script>
 
 <template>
-  <kawa-collapse v-model="activeNames" >
+  <kawa-collapse v-model="activeNames" @change="handleChange">
     <kawa-collapse-item title="Consistency" name="1">
       <div>
         Consistent with real life: in line with the process and logic of real
