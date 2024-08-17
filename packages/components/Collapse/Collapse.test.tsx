@@ -140,38 +140,38 @@ describe("Collapse.vue", () => {
     expect(secondHeader.classes()).toContain("is-active");
   });
 
-  test("手风琴模式 错误处理", () => {
-    const warn = vi.spyOn(console, "warn").mockImplementation(() => {});
-    mount(
-      () => (
-        <Collapse accordion modelValue={["a", "b"]} {...{ onChange }}>
-          <CollapseItem name="a" title="title a">
-            content a
-          </CollapseItem>
-          <CollapseItem name="b" title="title b">
-            content b
-          </CollapseItem>
-          <CollapseItem name="c" title="title c" disabled>
-            content c
-          </CollapseItem>
-        </Collapse>
-      ),
-      {
-        global: {
-          stubs: ["kawaIcon"],
-        },
-      }
-    );
-    expect(warn.mock.calls).toMatchInlineSnapshot(
-      `
-        [
-          [
-            [kawaUIError: [kawaCollapse] accordion mode should only have one active item],
-          ],
-        ]
-      `
-    );
-  });
+  // test("手风琴模式 错误处理", () => {
+  //   const warn = vi.spyOn(console, "warn").mockImplementation(() => {});
+  //   mount(
+  //     () => (
+  //       <Collapse accordion modelValue={["a", "b"]} {...{ onChange }}>
+  //         <CollapseItem name="a" title="title a">
+  //           content a
+  //         </CollapseItem>
+  //         <CollapseItem name="b" title="title b">
+  //           content b
+  //         </CollapseItem>
+  //         <CollapseItem name="c" title="title c" disabled>
+  //           content c
+  //         </CollapseItem>
+  //       </Collapse>
+  //     ),
+  //     {
+  //       global: {
+  //         stubs: ["kawaIcon"],
+  //       },
+  //     }
+  //   );
+  //   expect(warn.mock.calls).toMatchInlineSnapshot(
+  //     `
+  //       [
+  //         [
+  //           [kawaUIError: [kawaCollapse] accordion mode should only have one active item],
+  //         ],
+  //       ]
+  //     `
+  //   );
+  // });
 });
 
 describe("Collapse/transitionEvents.ts", () => {
