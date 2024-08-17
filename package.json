@@ -7,7 +7,7 @@
     "dev": "pnpm --filter @kawa-ui/play dev",
     "story": "pnpm --filter @kawa-ui/play storybook",
     "docs:dev": "pnpm --filter @kawa-ui/docs dev",
-    "docs:build": "pnpm --filter @kawa-ui/docs build",
+    "docs:build": "cross-env NODE_ENV=production pnpm build && pnpm --filter @kawa-ui/docs build",
     "docs:preview": "pnpm --filter @kawa-ui/docs preview",
     "test": "pnpm --filter @kawa-ui/components test",
     "build": "pnpm --filter kawa-ui build"
