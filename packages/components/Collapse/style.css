@@ -1,4 +1,4 @@
-.er-collapse {
+.kawa-collapse {
   --kawa-collapse-border-color: var(--kawa-border-color-light);
   --kawa-collapse-header-height: 48px;
   --kawa-collapse-header-bg-color: var(--kawa-fill-color-blank);
@@ -13,7 +13,7 @@
   border-bottom: 1px solid var(--kawa-collapse-border-color);
 }
 
-.er-collapse-item__header {
+.kawa-collapse-item__header {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -42,7 +42,7 @@
     transition: transform var(--kawa-transition-duration);
   }
 }
-.er-collapse-item__content {
+.kawa-collapse-item__content {
   will-change: height;
   background-color: var(--kawa-collapse-content-bg-color);
   overflow: hidden;

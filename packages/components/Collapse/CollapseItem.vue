@@ -6,7 +6,7 @@ import transitionEvents from "./transitionEvents";
 import kawaIcon from "../Icon/Icon.vue";
 
 defineOptions({
-  name: "ErCollapseItem",
+  name: "kawaCollapseItem",
 });
 
 const props = defineProps<CollapseItemProps>();

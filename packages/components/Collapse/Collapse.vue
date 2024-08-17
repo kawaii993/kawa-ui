@@ -9,7 +9,7 @@ import type {
 // import { debugWarn } from "@kawa-ui/utils";
 import { COLLAPSE_CTX_KEY } from "./constants";
 
-const COMPONENT_NAME = "ErCollapse" as const;
+const COMPONENT_NAME = "kawaCollapse" as const;
 
 defineOptions({
   name: COMPONENT_NAME,

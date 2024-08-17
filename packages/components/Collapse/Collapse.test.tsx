@@ -36,7 +36,7 @@ describe("Collapse.vue", () => {
       ),
       {
         global: {
-          stubs: ["ErIcon"],
+          stubs: ["kawaIcon"],
         },
         attachTo: document.body, // 最新版本 jsdom 更新缓存 bug
       }
@@ -118,7 +118,7 @@ describe("Collapse.vue", () => {
       ),
       {
         global: {
-          stubs: ["ErIcon"],
+          stubs: ["kawaIcon"],
         },
         attachTo: document.body,
       }
@@ -158,7 +158,7 @@ describe("Collapse.vue", () => {
       ),
       {
         global: {
-          stubs: ["ErIcon"],
+          stubs: ["kawaIcon"],
         },
       }
     );
@@ -166,7 +166,7 @@ describe("Collapse.vue", () => {
       `
         [
           [
-            [ErUIError: [ErCollapse] accordion mode should only have one active item],
+            [kawaUIError: [kawaCollapse] accordion mode should only have one active item],
           ],
         ]
       `
