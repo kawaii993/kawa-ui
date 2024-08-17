@@ -1,85 +1,73 @@
 {
-  "hash": "a2f6f9c8",
-  "configHash": "5a8161c4",
-  "lockfileHash": "62cff69e",
-  "browserHash": "82a6b225",
+  "hash": "58b1f392",
+  "configHash": "beb63262",
+  "lockfileHash": "90d9daa0",
+  "browserHash": "4265eb50",
   "optimized": {
     "vue": {
       "src": "../../../../../node_modules/.pnpm/vue@3.4.37_typescript@5.5.4/node_modules/vue/dist/vue.runtime.esm-bundler.js",
       "file": "vue.js",
-      "fileHash": "bacbe9ea",
+      "fileHash": "c5d9b76f",
       "needsInterop": false
     },
     "vitepress > @vue/devtools-api": {
       "src": "../../../../../node_modules/.pnpm/@vue+devtools-api@7.3.7/node_modules/@vue/devtools-api/dist/index.js",
       "file": "vitepress___@vue_devtools-api.js",
-      "fileHash": "75d51b04",
+      "fileHash": "d7155ac8",
       "needsInterop": false
     },
     "vitepress > @vueuse/core": {
       "src": "../../../../../node_modules/.pnpm/@vueuse+core@10.11.1_vue@3.4.37/node_modules/@vueuse/core/index.mjs",
       "file": "vitepress___@vueuse_core.js",
-      "fileHash": "e858130b",
+      "fileHash": "8cb84c8e",
       "needsInterop": false
     },
     "vitepress > @vueuse/integrations/useFocusTrap": {
       "src": "../../../../../node_modules/.pnpm/@vueuse+integrations@10.11.1_async-validator@4.2.5_focus-trap@7.5.4_vue@3.4.37/node_modules/@vueuse/integrations/useFocusTrap.mjs",
       "file": "vitepress___@vueuse_integrations_useFocusTrap.js",
-      "fileHash": "a3419b42",
+      "fileHash": "870869ba",
       "needsInterop": false
     },
     "vitepress > mark.js/src/vanilla.js": {
       "src": "../../../../../node_modules/.pnpm/mark.js@8.11.1/node_modules/mark.js/src/vanilla.js",
       "file": "vitepress___mark__js_src_vanilla__js.js",
-      "fileHash": "6d4caaf1",
+      "fileHash": "d8fb0489",
       "needsInterop": false
     },
     "vitepress > minisearch": {
       "src": "../../../../../node_modules/.pnpm/minisearch@6.3.0/node_modules/minisearch/dist/es/index.js",
       "file": "vitepress___minisearch.js",
-      "fileHash": "1087216c",
+      "fileHash": "c703ef03",
       "needsInterop": false
     },
     "@fortawesome/fontawesome-svg-core": {
       "src": "../../../../../node_modules/.pnpm/@fortawesome+fontawesome-svg-core@6.6.0/node_modules/@fortawesome/fontawesome-svg-core/index.mjs",
       "file": "@fortawesome_fontawesome-svg-core.js",
-      "fileHash": "4681cdc3",
+      "fileHash": "b91c9d36",
       "needsInterop": false
     },
     "@fortawesome/free-solid-svg-icons": {
       "src": "../../../../../node_modules/.pnpm/@fortawesome+free-solid-svg-icons@6.6.0/node_modules/@fortawesome/free-solid-svg-icons/index.mjs",
       "file": "@fortawesome_free-solid-svg-icons.js",
-      "fileHash": "ddc4f417",
+      "fileHash": "14a267c2",
       "needsInterop": false
     },
     "@fortawesome/vue-fontawesome": {
       "src": "../../../../../node_modules/.pnpm/@fortawesome+vue-fontawesome@3.0.8_@fortawesome+fontawesome-svg-core@6.6.0_vue@3.4.37/node_modules/@fortawesome/vue-fontawesome/index.es.js",
       "file": "@fortawesome_vue-fontawesome.js",
-      "fileHash": "50e8e9fe",
-      "needsInterop": false
-    },
-    "@vitepress-demo-preview/component": {
-      "src": "../../../../../node_modules/.pnpm/@vitepress-demo-preview+component@2.3.2_vitepress@1.1.4_vue@3.4.37/node_modules/@vitepress-demo-preview/component/dist/preview-component.js",
-      "file": "@vitepress-demo-preview_component.js",
-      "fileHash": "2702c78d",
-      "needsInterop": false
-    },
-    "@vitepress-preview/component": {
-      "src": "../../../../../node_modules/@vitepress-preview/component/.dist/preview-component.js",
-      "file": "@vitepress-preview_component.js",
-      "fileHash": "c8c75b81",
+      "fileHash": "08c0e0d6",
       "needsInterop": false
     }
   },
   "chunks": {
-    "chunk-ABNGYXHT": {
-      "file": "chunk-ABNGYXHT.js"
-    },
-    "chunk-4HX7LETB": {
-      "file": "chunk-4HX7LETB.js"
+    "chunk-EX76Y37G": {
+      "file": "chunk-EX76Y37G.js"
     },
     "chunk-JSAMQLXU": {
       "file": "chunk-JSAMQLXU.js"
+    },
+    "chunk-4HX7LETB": {
+      "file": "chunk-4HX7LETB.js"
     }
   }
 }

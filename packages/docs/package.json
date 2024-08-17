@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "type": "module",
-  "main": "index.js",
+  "main": "index.md",
   "scripts": {
-    "dev": "vitepress dev ",
-    "build": "vitepress build ",
+    "dev": "vitepress dev ./",
+    "build": "vitepress build ./",
     "preview": "vitepress preview"
   },
   "keywords": [],

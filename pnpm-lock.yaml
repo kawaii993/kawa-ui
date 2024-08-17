@@ -17,6 +17,9 @@ importers:
       '@kawa-ui/utils':
         specifier: workspace:*
         version: link:packages/utils
+      '@kawa-ui/vite-plugins':
+        specifier: workspace:*
+        version: link:libs/vite-plugins
       '@vitepress-demo-preview/component':
         specifier: ^2.3.2
         version: 2.3.2(vitepress@1.1.4)(vue@3.4.37)
@@ -96,6 +99,9 @@ importers:
       vite:
         specifier: ^5.1.4
         version: 5.4.0(@types/node@20.14.15)(sass@1.77.8)
+      vite-plugin-dts:
+        specifier: ^3.9.1
+        version: 3.9.1(@types/node@20.14.15)(typescript@5.5.4)(vite@5.4.0)
       vitest:
         specifier: ^1.4.0
         version: 1.6.0(@types/node@20.14.15)(jsdom@24.1.1)
