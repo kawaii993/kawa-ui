@@ -4,7 +4,6 @@
 
 For my studying  :D
 
-[kawa-ui 项目文档地址](https://kawaii993.github.io/kawa-ui/)
 
 ## 特点
 - 🌟 完全基于 Vue3 和 TypeScript，享受最新的前端技术红利
@@ -18,5 +17,19 @@ npm install ui-kawa
 ```
 ## 快速开始
 
-暂定
+[kawa-ui 项目在线文档地址](https://kawaii993.github.io/kawa-ui/)
 
+首页预览：
+
+![alt text](image.png)
+
+快速开始页面：
+
+![alt text](image-1.png)
+
+明暗主题展示：
+![alt text](image-2.png)
+![alt text](image-3.png)
+
+组件代码预览功能：
+![alt text](image-5.png)
